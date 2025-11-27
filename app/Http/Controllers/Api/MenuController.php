@@ -18,10 +18,4 @@ class MenuController extends Controller
     {
         return response()->json($menuItem);
     }
-
-    public function categories()
-    {
-        $categories = MenuItem::distinct()->pluck('category');
-        return response()->json($categories);
-    }
 }

@@ -8,7 +8,6 @@ use App\Http\Controllers\OrderController;
 Route::middleware('auth:sanctum')->group(function () {
     // Menu routes
     Route::get('/menu-items', [MenuController::class, 'index']);
-    Route::get('/menu-items/categories', [MenuController::class, 'categories']);
     Route::get('/menu-items/{menuItem}', [MenuController::class, 'show']);
     
     // Order routes
